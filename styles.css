@@ -1,10 +1,11 @@
 :root {
-    --primary-color: #654922;
-    --secondary-color: #956e2f;
-    --accent-color: #b68b4b;
-    --text-color: #FFFAFA;
-    --background-color: #4d574e;
-    --dark-background: #303531;
+    --color-light-gray: #9e9ea2;
+    --color-medium-gray: #797979;
+    --color-dark-gray: #3b3b3d;
+    --color-very-dark-gray: #1e1e20;
+    --color-almost-black: #090909;
+    --color-accent: #2b59b0;
+    --color-white: #FFFFFF;
 }
 
 * {
@@ -14,10 +15,10 @@
 }
 
 body {
-    font-family: Poppins, Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
+    color: var(--color-white);
+    background-color: var(--color-dark-gray);
 }
 
 a {
@@ -27,8 +28,8 @@ a {
 
 /* Header and Navigation */
 header {
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    color: var(--accent-color);
+    background: linear-gradient(to right, var(--color-very-dark-gray), var(--color-dark-gray));
+    color: var(--color-white);
     padding: 1rem 0;
     position: fixed;
     width: 100%;
@@ -65,7 +66,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: var(--text-color);
+    color: var(--color-accent);
     transform: translateY(-3px);
 }
 
@@ -77,7 +78,7 @@ nav {
 .burger div {
     width: 25px;
     height: 3px;
-    background-color: var(--accent-color);
+    background-color: var(--color-white);
     margin: 5px;
     transition: all 0.3s ease;
 }
@@ -93,51 +94,51 @@ section {
 }
 
 #home {
-    background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(to bottom right, var(--color-very-dark-gray), var(--color-dark-gray));
 }
 
 #about {
-    background-color: var(--dark-background);
-    color: var(--accent-color);
+    background-color: var(--color-almost-black);
+    color: var(--color-white);
 }
 
 #services {
-    background-color: var(--background-color);
+    background-color: var(--color-dark-gray);
 }
 
 #portfolio {
-    background: linear-gradient(to bottom, var(--secondary-color), var(--accent-color));
+    background: linear-gradient(to bottom, var(--color-dark-gray), var(--color-very-dark-gray));
 }
 
 #skills {
-    background-color: var(--dark-background);
-    color: var(--accent-color);
+    background-color: var(--color-almost-black);
+    color: var(--color-white);
 }
 
 #contact {
-    background-color: var(--background-color);
+    background-color: var(--color-dark-gray);
 }
 
 .portfolio-page {
-    background-color: var(--background-color);
+    background-color: var(--color-dark-gray);
 }
 
 .project-section:nth-child(even) {
-    background-color: var(--dark-background);
-    color: var(--accent-color);
+    background-color: var(--color-very-dark-gray);
+    color: var(--color-white);
 }
 
 .project-section:nth-child(odd) {
-    background-color: var(--background-color);
+    background-color: var(--color-dark-gray);
 }
 
 
 h1, h2, h3 {
-    color: var(--accent-color);
+    color: var(--color-white);
 }
 
 #services h2, #portfolio h2, .portfolio-page h1, .portfolio-page h2 {
-    color: var(--primary-color);
+    color: var(--color-white);
 }
 
 .container {
@@ -182,16 +183,16 @@ h1, h2, h3 {
 }
 
 .cta-button {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
+    background-color: var(--color-accent);
+    color: var(--color-white);
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: var(--color-light-gray);
+    color: var(--color-almost-black);
 }
 
 /* Services Section */
@@ -202,7 +203,7 @@ h1, h2, h3 {
 }
 
 .service-item, .portfolio-item, .project-item {
-    background-color: var(--accent-color);
+    background-color: var(--color-very-dark-gray);
     padding: 1.5rem;
     border-radius: 5px;
     text-align: center;
@@ -212,12 +213,12 @@ h1, h2, h3 {
 
 .service-item:hover, .portfolio-item:hover, .project-item:hover {
     transform: scale(1.05);
-    background-color: var(--secondary-color);
+    background-color: var(--color-accent);
 }
 
 .service-item i {
     font-size: 2.5rem;
-    color: var(--primary-color);
+    color: var(--color-accent);
     margin-bottom: 1rem;
 }
 
@@ -230,8 +231,8 @@ h1, h2, h3 {
 }
 
 .category-btn {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: var(--color-medium-gray);
+    color: var(--color-white);
     border: none;
     padding: 0.5rem 1rem;
     border-radius: 5px;
@@ -241,8 +242,8 @@ h1, h2, h3 {
 
 .category-btn.active,
 .category-btn:hover {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
+    background-color: var(--color-accent);
+    color: var(--color-white);
 }
 
 .portfolio-grid, .project-grid {
@@ -274,7 +275,7 @@ h1, h2, h3 {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.7);
-    color: var(--accent-color);
+    color: var(--color-white);
     padding: 1rem;
     transform: translateY(100%);
     transition: transform 0.3s ease;
@@ -288,16 +289,16 @@ h1, h2, h3 {
     display: block;
     width: max-content;
     margin: 2rem auto 0;
-    background-color: var(--primary-color);
-    color: var(--accent-color);
+    background-color: var(--color-accent);
+    color: var(--color-white);
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .view-more-btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: var(--color-light-gray);
+    color: var(--color-almost-black);
 }
 
 /* Skills Section */
@@ -309,7 +310,7 @@ h1, h2, h3 {
 }
 
 .skill-category {
-    background-color: var(--accent-color);
+    background-color: var(--color-very-dark-gray);
     padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -317,7 +318,7 @@ h1, h2, h3 {
 
 .skill-category h3 {
     margin-bottom: 1rem;
-    color: var(--primary-color);
+    color: var(--color-white);
 }
 
 .skill-category ul {
@@ -330,7 +331,7 @@ h1, h2, h3 {
 
 .skill-category i {
     margin-right: 0.5rem;
-    color: var(--primary-color);
+    color: var(--color-accent);
 }
 
 /* Contact Section */
@@ -349,7 +350,7 @@ h1, h2, h3 {
 #contact-form input,
 #contact-form textarea {
     padding: 0.75rem;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(--color-medium-gray);
     border-radius: 5px;
 }
 
@@ -359,8 +360,8 @@ h1, h2, h3 {
 }
 
 .submit-btn {
-    background-color: var(--primary-color);
-    color: var(--accent-color);
+    background-color: var(--color-accent);
+    color: var(--color-white);
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
@@ -369,8 +370,8 @@ h1, h2, h3 {
 }
 
 .submit-btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--text-color);
+    background-color: var(--color-light-gray);
+    color: var(--color-almost-black);
 }
 
 .contact-info {
@@ -383,7 +384,7 @@ h1, h2, h3 {
 
 .contact-info i {
     margin-right: 0.5rem;
-    color: var(--primary-color);
+    color: var(--color-accent);
 }
 
 .social-links {
@@ -394,18 +395,18 @@ h1, h2, h3 {
 
 .social-links a {
     font-size: 1.5rem;
-    color: var(--primary-color);
+    color: var(--color-accent);
     transition: color 0.3s ease;
 }
 
 .social-links a:hover {
-    color: var(--secondary-color);
+    color: var(--color-light-gray);
 }
 
 /* Footer */
 footer {
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
-    color: var(--accent-color);
+    background: linear-gradient(to right, var(--color-very-dark-gray), var(--color-dark-gray));
+    color: var(--color-white);
     text-align: center;
     padding: 1rem 0;
 }
@@ -417,7 +418,7 @@ footer {
         right: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: var(--primary-color);
+        background-color: var(--color-very-dark-gray);
         width: 50%;
         text-align: center;
         transition: 0.3s;
@@ -459,12 +460,12 @@ footer {
 /* Portfolio Page Styles */
 .portfolio-page {
     padding-top: 80px; /* To account for the fixed header */
-    background-color: var(--background-color);
+    background-color: var(--color-dark-gray);
 }
 
 .portfolio-page h1 {
     text-align: center;
-    color: var(--primary-color);
+    color: var(--color-white);
     margin-bottom: 2rem;
 }
 
@@ -473,7 +474,7 @@ footer {
 }
 
 .project-section h2 {
-    color: var(--primary-color);
+    color: var(--color-white);
     margin-bottom: 1.5rem;
 }
 
@@ -484,7 +485,7 @@ footer {
 }
 
 .project-item {
-    background-color: var(--accent-color);
+    background-color: var(--color-very-dark-gray);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -506,13 +507,13 @@ footer {
 }
 
 .project-info h3 {
-    color: var(--primary-color);
+    color: var(--color-white);
     margin-bottom: 0.5rem;
 }
 
 .project-info p {
     font-size: 0.9rem;
-    color: var(--text-color);
+    color: var(--color-white);
 }
 
 @media screen and (max-width: 768px) {
