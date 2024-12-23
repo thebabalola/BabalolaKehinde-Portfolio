@@ -1,10 +1,10 @@
 :root {
-    --color-brown: #705748;
-    --color-dark-gray: #4a4240;
-    --color-darker-gray: #302d2e;
-    --color-almost-black: #1b1b1e;
-    --color-light-brown: #9e7758;
-    --color-beige: #ecd1b4;
+    --color-black: #000101;
+    --color-dark-blue: #0c2e3d;
+    --color-blue: #186784;
+    --color-brown: #9a7c65;
+    --color-light-brown: #c0a088;
+    --color-beige: #dac6b6;
     --color-white: #FFFFFF;
 }
 
@@ -18,7 +18,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: var(--color-white);
-    background-color: var(--color-darker-gray);
+    background-color: var(--color-dark-blue);
 }
 
 a {
@@ -28,7 +28,7 @@ a {
 
 /* Header and Navigation */
 header {
-    background: linear-gradient(to right, var(--color-almost-black), var(--color-darker-gray));
+    background: linear-gradient(to right, var(--color-black), var(--color-dark-blue));
     color: var(--color-white);
     padding: 1rem 0;
     position: fixed;
@@ -95,42 +95,42 @@ section {
 }
 
 #home {
-    background: linear-gradient(to bottom right, var(--color-almost-black), var(--color-darker-gray));
+    background: linear-gradient(to bottom right, var(--color-black), var(--color-dark-blue));
 }
 
 #about {
-    background-color: var(--color-almost-black);
+    background-color: var(--color-black);
     color: var(--color-white);
 }
 
 #services {
-    background-color: var(--color-darker-gray);
+    background-color: var(--color-dark-blue);
 }
 
 #portfolio {
-    background: linear-gradient(to bottom, var(--color-darker-gray), var(--color-dark-gray));
+    background: linear-gradient(to bottom, var(--color-dark-blue), var(--color-blue));
 }
 
 #skills {
-    background-color: var(--color-almost-black);
+    background-color: var(--color-black);
     color: var(--color-white);
 }
 
 #contact {
-    background-color: var(--color-darker-gray);
+    background-color: var(--color-dark-blue);
 }
 
 .portfolio-page {
-    background-color: var(--color-darker-gray);
+    background-color: var(--color-dark-blue);
 }
 
 .project-section:nth-child(even) {
-    background-color: var(--color-almost-black);
+    background-color: var(--color-black);
     color: var(--color-white);
 }
 
 .project-section:nth-child(odd) {
-    background-color: var(--color-darker-gray);
+    background-color: var(--color-dark-blue);
 }
 
 h1, h2, h3 {
@@ -185,7 +185,7 @@ h1, h2, h3 {
 
 .cta-button {
     background-color: var(--color-light-brown);
-    color: var(--color-almost-black);
+    color: var(--color-black);
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -193,7 +193,7 @@ h1, h2, h3 {
 
 .cta-button:hover {
     background-color: var(--color-beige);
-    color: var(--color-almost-black);
+    color: var(--color-black);
 }
 
 /* Services Section */
@@ -204,7 +204,7 @@ h1, h2, h3 {
 }
 
 .service-item, .portfolio-item, .project-item {
-    background-color: var(--color-dark-gray);
+    background-color: var(--color-blue);
     padding: 1.5rem;
     border-radius: 5px;
     text-align: center;
@@ -232,7 +232,7 @@ h1, h2, h3 {
 }
 
 .category-btn {
-    background-color: var(--color-dark-gray);
+    background-color: var(--color-blue);
     color: var(--color-white);
     border: none;
     padding: 0.5rem 1rem;
@@ -244,7 +244,7 @@ h1, h2, h3 {
 .category-btn.active,
 .category-btn:hover {
     background-color: var(--color-light-brown);
-    color: var(--color-almost-black);
+    color: var(--color-black);
 }
 
 .portfolio-grid, .project-grid {
@@ -275,7 +275,7 @@ h1, h2, h3 {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(27, 27, 30, 0.8);
+    background-color: rgba(0, 1, 1, 0.8);
     color: var(--color-white);
     padding: 1rem;
     transform: translateY(100%);
@@ -291,7 +291,7 @@ h1, h2, h3 {
     width: max-content;
     margin: 2rem auto 0;
     background-color: var(--color-light-brown);
-    color: var(--color-almost-black);
+    color: var(--color-black);
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -299,7 +299,7 @@ h1, h2, h3 {
 
 .view-more-btn:hover {
     background-color: var(--color-beige);
-    color: var(--color-almost-black);
+    color: var(--color-black);
 }
 
 /* Skills Section */
@@ -311,7 +311,7 @@ h1, h2, h3 {
 }
 
 .skill-category {
-    background-color: var(--color-dark-gray);
+    background-color: var(--color-blue);
     padding: 1.5rem;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -351,9 +351,9 @@ h1, h2, h3 {
 #contact-form input,
 #contact-form textarea {
     padding: 0.75rem;
-    border: 1px solid var(--color-dark-gray);
+    border: 1px solid var(--color-blue);
     border-radius: 5px;
-    background-color: var(--color-almost-black);
+    background-color: var(--color-black);
     color: var(--color-white);
 }
 
@@ -364,7 +364,7 @@ h1, h2, h3 {
 
 .submit-btn {
     background-color: var(--color-light-brown);
-    color: var(--color-almost-black);
+    color: var(--color-black);
     border: none;
     padding: 0.75rem 1.5rem;
     border-radius: 5px;
@@ -374,7 +374,7 @@ h1, h2, h3 {
 
 .submit-btn:hover {
     background-color: var(--color-beige);
-    color: var(--color-almost-black);
+    color: var(--color-black);
 }
 
 .contact-info {
@@ -408,7 +408,7 @@ h1, h2, h3 {
 
 /* Footer */
 footer {
-    background: linear-gradient(to right, var(--color-almost-black), var(--color-darker-gray));
+    background: linear-gradient(to right, var(--color-black), var(--color-dark-blue));
     color: var(--color-white);
     text-align: center;
     padding: 1rem 0;
@@ -421,7 +421,7 @@ footer {
         right: -100%;
         top: 5rem;
         flex-direction: column;
-        background-color: var(--color-almost-black);
+        background-color: var(--color-black);
         width: 50%;
         text-align: center;
         transition: 0.3s;
@@ -463,7 +463,7 @@ footer {
 /* Portfolio Page Styles */
 .portfolio-page {
     padding-top: 80px; /* To account for the fixed header */
-    background-color: var(--color-darker-gray);
+    background-color: var(--color-dark-blue);
 }
 
 .portfolio-page h1 {
@@ -488,7 +488,7 @@ footer {
 }
 
 .project-item {
-    background-color: var(--color-dark-gray);
+    background-color: var(--color-blue);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -525,4 +525,4 @@ footer {
     }
 }
 
-/* --- woody interior theme --- */
+ /* --- color-pallete-lux (Blue theme) ---*/
