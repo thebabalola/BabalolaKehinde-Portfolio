@@ -28,13 +28,13 @@
     </header>
 
     <main>
-        <section id="home" style="background-image: url('hero-background.jpg');">
+        <section id="home" style="background-image: url('./assets/imgs/heroBanner.jpg');">
             <div class="hero">
                 <img src="/assets/imgs/profileImg.jpg" alt="Babalola Kehinde B." class="profile-photo">
                 <h1>Babalola Kehinde B.</h1>
-                <p class="tagline">Dynamic Interior Designer Delivering Functional and Aesthetic Spaces</p>
+                <p class="tagline">Dynamic <strong>Interior Designer</strong> Delivering Functional and Aesthetic Spaces</p>
                 <div class="cta-buttons">
-                    <a href="portfolio.com" class="cta-button" target="_blank">View My Work</a>
+                    <a href="portfolio.html" class="cta-button" target="_blank">View My Work</a>
                     <a href="cv.pdf" class="cta-button" target="_blank">View My CV</a>
                 </div>
             </div>
@@ -75,21 +75,91 @@
             </div>
         </section>
 
+        
         <section id="portfolio">
             <div class="container">
                 <h2>Portfolio</h2>
                 <div class="portfolio-categories">
-                    <button class="category-btn active" data-category="all">All</button>
-                    <button class="category-btn" data-category="residential">Residential</button>
-                    <button class="category-btn" data-category="commercial">Commercial</button>
-                    <button class="category-btn" data-category="renovation">Renovation</button>
+                    <button class="category-btn active all-btn" data-category="all">All</button>
+                    <a href="./portfolio.html#residential">
+                        <button class="category-btn" data-category="residential">Residential</button>
+                    </a>
+                    <a href="./portfolio.html#commercial">
+                        <button class="category-btn" data-category="commercial">Commercial</button>
+                    </a>
+                    <a href="./portfolio.html#renovations"></a>
+                        <button class="category-btn" data-category="renovation">Renovations</button>
+                    </a>
                 </div>
                 <div class="portfolio-grid">
+                    <div class="portfolio-grid">
+                        <!-- Residential Item -->
+                        <div class="portfolio-item" data-category="residential">
+                            <img src="./assets/imgs/modern-LR.jpeg" alt="Modern Living Room">
+                            <div class="portfolio-item-info">
+                                <h3>Modern Living Room</h3>
+                                <p>A contemporary living space with clean lines and neutral tones.</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Commercial Item -->
+                        <div class="portfolio-item" data-category="commercial">
+                            <img src="./assets/imgs/sleek office design.jpg" alt="Sleek Office Design">
+                            <div class="portfolio-item-info">
+                                <h3>Sleek Office Design</h3>
+                                <p>An open-plan office space promoting collaboration and productivity.</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Renovation Item -->
+                        <div class="portfolio-item" data-category="renovation">
+                            <img src="./assets/imgs/Kitchen-MO.jpeg" alt="Kitchen Makeover">
+                            <div class="portfolio-item-info">
+                                <h3>Kitchen Makeover</h3>
+                                <p>A complete kitchen renovation with modern appliances and stylish finishes.</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Residential Video -->
+                        <div class="portfolio-item" data-category="residential">
+                            <video muted controls>
+                                <source src="./assets/vids/cozy-BR.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="portfolio-item-info">
+                                <h3>Cozy Bedroom Retreat</h3>
+                                <p>A serene bedroom design focusing on comfort and relaxation.</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Commercial Item -->
+                        <div class="portfolio-item" data-category="commercial">
+                            <img src="./assets/imgs/chic-RS.jpeg" alt="Chic Retail Space">
+                            <div class="portfolio-item-info">
+                                <h3>Chic Retail Space</h3>
+                                <p>A trendy retail interior designed to enhance the shopping experience.</p>
+                            </div>
+                        </div>
+                    
+                        <!-- Renovation Video -->
+                        <div class="portfolio-item" data-category="renovation">
+                            <video muted controls>
+                                <source src="./assets/vids/bathroom-TF.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="portfolio-item-info">
+                                <h3>Bathroom Transformation</h3>
+                                <p>A luxurious bathroom renovation with spa-like features.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <!-- Portfolio items will be dynamically added here -->
                 </div>
                 <a href="portfolio.html" class="view-more-btn">View More Projects</a>
             </div>
         </section>
+
 
         <section id="skills">
             <div class="container">
@@ -140,8 +210,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2023 Babalola Kehinde B. All rights reserved.</p>
-        <p>Designed with passion for timeless spaces</p>
+        <p>&copy; 2024 Babalola Kehinde B. All rights reserved.</p>
+        <!-- <p>Designed with passion for timeless spaces</p> -->
     </footer>
 
     <script src="script.js"></script>

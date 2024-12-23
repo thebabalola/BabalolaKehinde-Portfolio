@@ -19,6 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+
+
+
+
+
+    
     function initPortfolioPage() {
         const portfolioLinks = document.querySelectorAll('.nav-links a[href^="#"]');
         portfolioLinks.forEach(anchor => {
@@ -46,14 +52,30 @@ document.addEventListener('DOMContentLoaded', () => {
     const categoryButtons = document.querySelectorAll('.category-btn');
 
     // Sample portfolio items (replace with your actual projects)
-    const portfolioItems = [
-        { category: 'residential', image: 'residential-1.jpg', title: 'Modern Living Room', description: 'A contemporary living space with clean lines and neutral tones.' },
-        { category: 'commercial', image: 'commercial-1.jpg', title: 'Sleek Office Design', description: 'An open-plan office space promoting collaboration and productivity.' },
-        { category: 'renovation', image: 'renovation-1.jpg', title: 'Kitchen Makeover', description: 'A complete kitchen renovation with modern appliances and stylish finishes.' },
-        { category: 'residential', image: 'residential-2.jpg', title: 'Cozy Bedroom Retreat', description: 'A serene bedroom design focusing on comfort and relaxation.' },
-        { category: 'commercial', image: 'commercial-2.jpg', title: 'Chic Retail Space', description: 'A trendy retail interior designed to enhance the shopping experience.' },
-        { category: 'renovation', image: 'renovation-2.jpg', title: 'Bathroom Transformation', description: 'A luxurious bathroom renovation with spa-like features.' }
-    ];
+    // const portfolioItems = [
+    //     { category: 'residential', image: './assets/imgs/modern-LR.jpeg', title: 'Modern Living Room', description: 'A contemporary living space with clean lines and neutral tones.'},
+    //     { category: 'commercial', image: './assets/imgs/sleek office design.jpg', title: 'Sleek Office Design', description: 'An open-plan office space promoting collaboration and productivity.' },
+    //     { category: 'renovation', image: './assets/imgs/Kitchen-MO.jpeg', title: 'Kitchen Makeover', description: 'A complete kitchen renovation with modern appliances and stylish finishes.' },
+    //     { category: 'residential', video: './assets/vids/cozy-BR.mp4', title: 'Cozy Bedroom Retreat', description: 'A serene bedroom design focusing on comfort and relaxation.' },
+    //     { category: 'commercial', image: './assets/imgs/chic-RS.jpeg', title: 'Chic Retail Space', description: 'A trendy retail interior designed to enhance the shopping experience.' },
+    //     { category: 'renovation', video: './assets/vids/bathroom-TF.mp4', title: 'Bathroom Transformation', description: 'A luxurious bathroom renovation with spa-like features.' }
+    // ];
+
+
+    // Select all video elements
+const videos = document.querySelectorAll('.portfolio-item video');
+
+// Add click event listeners to each video
+videos.forEach(video => {
+    video.addEventListener('click', () => {
+        if (video.paused) {
+            video.play(); // Play the video if it is paused
+        } else {
+            video.pause(); // Pause the video if it is playing
+        }
+    });
+});
+
 
     function createPortfolioItem(item) {
         const portfolioItem = document.createElement('div');
