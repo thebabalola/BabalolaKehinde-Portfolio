@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 :root {
-    --primary-color: #8B4513;
-    --secondary-color: #D2B48C;
-    --accent-color: #FFFFFF;
-    --text-color: #333333;
-    --background-color: #F5F5DC;
+    --primary-color: #654922;
+    --secondary-color: #956e2f;
+    --accent-color: #b68b4b;
+    --text-color: #FFFAFA;
+    --background-color: #4d574e;
+    --dark-background: #303531;
 }
 
 * {
@@ -15,7 +14,7 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Poppins, Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
@@ -28,7 +27,7 @@ a {
 
 /* Header and Navigation */
 header {
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     color: var(--accent-color);
     padding: 1rem 0;
     position: fixed;
@@ -61,11 +60,13 @@ nav {
 }
 
 .nav-links a {
-    transition: color 0.3s ease;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: var(--secondary-color);
+    color: var(--text-color);
+    transform: translateY(-3px);
 }
 
 .burger {
@@ -83,20 +84,67 @@ nav {
 
 /* Main Content */
 main {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 2rem;
 }
 
 section {
-    margin-bottom: 4rem;
+    padding: 4rem 2rem;
 }
 
-h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+#home {
+    background: linear-gradient(to bottom right, var(--primary-color), var(--secondary-color));
+}
+
+#about {
+    background-color: var(--dark-background);
+    color: var(--accent-color);
+}
+
+#services {
+    background-color: var(--background-color);
+}
+
+#portfolio {
+    background: linear-gradient(to bottom, var(--secondary-color), var(--accent-color));
+}
+
+#skills {
+    background-color: var(--dark-background);
+    color: var(--accent-color);
+}
+
+#contact {
+    background-color: var(--background-color);
+}
+
+.portfolio-page {
+    background-color: var(--background-color);
+}
+
+.project-section:nth-child(even) {
+    background-color: var(--dark-background);
+    color: var(--accent-color);
+}
+
+.project-section:nth-child(odd) {
+    background-color: var(--background-color);
+}
+
+
+h1, h2, h3 {
+    color: var(--accent-color);
+}
+
+#services h2, #portfolio h2, .portfolio-page h1, .portfolio-page h2 {
     color: var(--primary-color);
 }
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 
 /* Home Section */
 #home {
@@ -105,13 +153,13 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: var(--secondary-color);
 }
 
 .hero {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.1);
     padding: 2rem;
     border-radius: 10px;
+    backdrop-filter: blur(5px);
 }
 
 .profile-photo {
@@ -153,17 +201,18 @@ h2 {
     gap: 2rem;
 }
 
-.service-item {
+.service-item, .portfolio-item, .project-item {
     background-color: var(--accent-color);
     padding: 1.5rem;
     border-radius: 5px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.service-item:hover {
-    transform: translateY(-5px);
+.service-item:hover, .portfolio-item:hover, .project-item:hover {
+    transform: scale(1.05);
+    background-color: var(--secondary-color);
 }
 
 .service-item i {
@@ -196,7 +245,7 @@ h2 {
     color: var(--accent-color);
 }
 
-.portfolio-grid {
+.portfolio-grid, .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
@@ -208,14 +257,14 @@ h2 {
     border-radius: 5px;
 }
 
-.portfolio-item img {
+.portfolio-item img, .project-item img {
     width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
 
-.portfolio-item:hover img {
+.portfolio-item:hover img, .project-item:hover img {
     transform: scale(1.1);
 }
 
@@ -355,7 +404,7 @@ h2 {
 
 /* Footer */
 footer {
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
     color: var(--accent-color);
     text-align: center;
     padding: 1rem 0;
@@ -410,6 +459,7 @@ footer {
 /* Portfolio Page Styles */
 .portfolio-page {
     padding-top: 80px; /* To account for the fixed header */
+    background-color: var(--background-color);
 }
 
 .portfolio-page h1 {
