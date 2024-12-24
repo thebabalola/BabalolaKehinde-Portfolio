@@ -24,7 +24,78 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+    const sliders = document.querySelectorAll('.project-slider');
+
+    sliders.forEach(slider => {
+        const container = slider.querySelector('.slider-container');
+        const prevBtn = slider.querySelector('.prev');
+        const nextBtn = slider.querySelector('.next');
+        const slides = container.children;
+        let currentIndex = 0;
+
+        function showSlide(index) {
+            container.style.transform = `translateX(-${index * 100}%)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+            showSlide(currentIndex);
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        // Autoplay functionality
+        let autoplayInterval;
+
+        function startAutoplay() {
+            autoplayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+        }
+
+        function stopAutoplay() {
+            clearInterval(autoplayInterval);
+        }
+
+        // Start autoplay when the mouse leaves the slider
+        slider.addEventListener('mouseleave', startAutoplay);
+
+        // Stop autoplay when the mouse enters the slider
+        slider.addEventListener('mouseenter', stopAutoplay);
+
+        // Initialize autoplay
+        startAutoplay();
+
+        // Pause video when it's not in view
+        const video = slider.querySelector('video');
+        if (video) {
+            video.addEventListener('ended', nextSlide);
+
+            new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        video.play();
+                    } else {
+                        video.pause();
+                    }
+                });
+            }, { threshold: 0.5 }).observe(video);
+        }
+    });
     
+
+
+
+
+
+
+
     function initPortfolioPage() {
         const portfolioLinks = document.querySelectorAll('.nav-links a[href^="#"]');
         portfolioLinks.forEach(anchor => {
