@@ -524,6 +524,10 @@ footer {
 
 
     /* --- HERO --- */
+    #home {
+        background-attachment: scroll; /* Remove fixed background */
+        background-position: center center; /* Adjust positioning if necessary */
+    }
 	.hero {
 		display: flex;
 		flex-direction: column;
