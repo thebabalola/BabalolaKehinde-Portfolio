@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+
     // Mobile Navigation
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -18,12 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
-
-
-
-
-
-
 
 
     const sliders = document.querySelectorAll('.project-slider');
@@ -134,10 +129,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     // Select all video elements
-const videos = document.querySelectorAll('.portfolio-item video');
+    const videos = document.querySelectorAll('.portfolio-item video');
 
-// Add click event listeners to each video
-videos.forEach(video => {
+    // Add click event listeners to each video
+    videos.forEach(video => {
     video.addEventListener('click', () => {
         if (video.paused) {
             video.play(); // Play the video if it is paused
@@ -145,7 +140,7 @@ videos.forEach(video => {
             video.pause(); // Pause the video if it is playing
         }
     });
-});
+    });
 
 
     function createPortfolioItem(item) {
