@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
         let autoplayInterval;
 
         function startAutoplay() {
-            autoplayInterval = setInterval(nextSlide, 5000); // Change slide every 5 seconds
+            autoplayInterval = setInterval(nextSlide, 7000); // Change slide every 5 seconds
         }
 
         function stopAutoplay() {
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         video.pause();
                     }
                 });
-            }, { threshold: 0.5 }).observe(video);
+            }, { threshold: 0.7 }).observe(video);
         }
     });
 
