@@ -33,25 +33,25 @@ document.addEventListener('DOMContentLoaded', () => {
         if (nextBtn) nextBtn.addEventListener('click', nextSlide);
         if (prevBtn) prevBtn.addEventListener('click', prevSlide);
 
-        // Autoplay functionality
-        let autoplayInterval;
+        // // Autoplay functionality
+        // let autoplayInterval;
 
-        function startAutoplay() {
-            autoplayInterval = setInterval(nextSlide, 7000); // Change slide every 5 seconds
-        }
+        // function startAutoplay() {
+        //     autoplayInterval = setInterval(nextSlide, 7000); // Change slide every 5 seconds
+        // }
 
-        function stopAutoplay() {
-            clearInterval(autoplayInterval);
-        }
+        // function stopAutoplay() {
+        //     clearInterval(autoplayInterval);
+        // }
 
-        // Start autoplay when the mouse leaves the slider
-        slider.addEventListener('mouseleave', startAutoplay);
+        // // Start autoplay when the mouse leaves the slider
+        // slider.addEventListener('mouseleave', startAutoplay);
 
-        // Stop autoplay when the mouse enters the slider
-        slider.addEventListener('mouseenter', stopAutoplay);
+        // // Stop autoplay when the mouse enters the slider
+        // slider.addEventListener('mouseenter', stopAutoplay);
 
-        // Initialize autoplay
-        startAutoplay();
+        // // Initialize autoplay
+        // startAutoplay();
 
         // Pause video when it's not in view
         const video = slider.querySelector('video');
