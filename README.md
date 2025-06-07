@@ -59,3 +59,76 @@ For manual updates, simply push changes to your main branch, and Vercel will aut
 
 ## Contact
 
+#residential , #renovations {
+    background-color: var(--color-almost-black);
+}
+
+  transition: right 0.3s ease;
+
+
+  .nav-links li {
+        padding: 1.5rem 0;
+
+.nav-links {
+        position: fixed;
+        right: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: var(--color-almost-black);
+        width: 70%;
+        text-align: center;
+        transition: right 0.3s ease;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 1rem;
+        
+        ...
+
+            header {
+        top: 0;
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: var(--color-almost-black);
+        width: 70%;
+        text-align: center;
+        transition: right 0.3s ease;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        padding: 1.5rem 0;
+        height: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 1rem;
+
+        justify-content: center;
+        align-items: center;
+        height: inherit;
+        width: 100%;
+    }
+
+    .nav-links > li:hover {
+        background-color: var(--color-brown);
+    }

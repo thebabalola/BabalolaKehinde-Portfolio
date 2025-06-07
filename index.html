@@ -1,237 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Babalola Kehinde B. - Interior Designer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="favicon.png">
-</head>
-
-<body>
-
+  </head>
+  <body>
     <header>
-        <nav>
-            <div class="logo">Babalola Kehinde</div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
+      <nav>
+        <div class="logo">Babalola Kehinde</div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </nav>
     </header>
 
-
     <main>
-        <!-- HERO  -->
-        <section id="home">
-            <div class="hero">
-                <img src="/assets/imgs/profileImg.jpg" alt="Babalola Kehinde B." class="profile-photo">
-                <h1>Babalola Kehinde B.</h1>
-                <p class="tagline">Dynamic <strong>Interior Designer</strong> Delivering Functional and Aesthetic Spaces</p>
-                <div class="cta-buttons">
-                    <a href="portfolio.html" class="cta-button" target="_blank">View My Work</a>
-                    <a href="https://drive.google.com/file/d/1_3cPhrcNL365OVv8xAH2dOV45PLmMvow/view?usp=sharing" class="cta-button" target="_blank">View My CV</a>
-                </div>
+      <section id="home">
+        <div class="hero">
+          <img src="/assets/imgs/profileImg.jpg" alt="Babalola Kehinde B." class="profile-photo">
+          <h1>Babalola Kehinde B.</h1>
+          <p class="tagline">Dynamic <strong>Interior Designer</strong> Delivering Functional and Aesthetic Spaces</p>
+          <div class="cta-buttons">
+            <a href="portfolio.html" class="cta-button" target="_blank">View My Work</a>
+            <a href="https://drive.google.com/file/d/1_3cPhrcNL365OVv8xAH2dOV45PLmMvow/view?usp=sharing" class="cta-button" target="_blank">View My CV</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div class="container">
+          <h2>About Me</h2>
+          <p>As a passionate interior designer, I bring creativity, leadership, and effective communication to every project. With a keen eye for detail and a commitment to excellence, I transform spaces into functional and aesthetically pleasing environments that exceed client expectations.</p>
+        </div>
+      </section>
+
+      <section id="services">
+        <div class="container">
+          <h2>Services</h2>
+          <div class="services-grid">
+            <div class="service-item">
+              <i class="fas fa-pencil-ruler"></i>
+              <h3>Interior Project Execution</h3>
+              <p>From concept to completion, I bring your vision to life.</p>
             </div>
-        </section>
-
-        <!-- ABOUT -->
-        <section id="about">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>As a passionate interior designer, I bring creativity, leadership, and effective communication to every project. With a keen eye for detail and a commitment to excellence, I transform spaces into functional and aesthetically pleasing environments that exceed client expectations.</p>
+            <div class="service-item">
+              <i class="fas fa-lightbulb"></i>
+              <h3>Creative Design Strategies</h3>
+              <p>Innovative solutions tailored to your unique style and needs.</p>
             </div>
-        </section>
-
-        <!-- SERVICES -->
-        <section id="services">
-            <div class="container">
-                <h2>Services</h2>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <i class="fas fa-pencil-ruler"></i>
-                        <h3>Interior Project Execution</h3>
-                        <p>From concept to completion, I bring your vision to life.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-lightbulb"></i>
-                        <h3>Creative Design Strategies</h3>
-                        <p>Innovative solutions tailored to your unique style and needs.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-clipboard-check"></i>
-                        <h3>Project Supervision</h3>
-                        <p>Ensuring quality and timely delivery at every stage.</p>
-                    </div>
-                    <div class="service-item">
-                        <i class="fas fa-comments"></i>
-                        <h3>Client Consultations</h3>
-                        <p>Personalized advice to help you make informed decisions.</p>
-                    </div>
-                </div>
+            <div class="service-item">
+              <i class="fas fa-clipboard-check"></i>
+              <h3>Project Supervision</h3>
+              <p>Ensuring quality and timely delivery at every stage.</p>
             </div>
-        </section>
-
-        <!-- PORTFOLIO -->
-        <section id="portfolio">
-            <div class="container">
-                <h2>Portfolio</h2>
-                <div class="portfolio-categories">
-                    <button class="category-btn active all-btn" data-category="all">All</button>
-                    <a href="./portfolio.html#residential">
-                        <button class="category-btn" data-category="residential">Residential</button>
-                    </a>
-                    <a href="./portfolio.html#commercial">
-                        <button class="category-btn" data-category="commercial">Commercial</button>
-                    </a>
-                    <a href="./portfolio.html#renovations"></a>
-                        <button class="category-btn" data-category="renovation">Renovation</button>
-                    </a>
-                </div>
-
-                <div class="portfolio-grid">
-                    <div class="portfolio-grid">
-                        <!-- Residential Item -->
-                        <div class="portfolio-item" data-category="residential">
-                            <img src="./assets/imgs/Res-VictoryPark-LivingRM01.jpg" alt="Modern Living Room">
-                            <div class="portfolio-item-info">
-                                <h3>Modern Living Room</h3>
-                                <p>A contemporary living space with clean lines and neutral tones.</p>
-                            </div>
-                        </div>
-                    
-                        <!-- Commercial Item -->
-                        <div class="portfolio-item" data-category="commercial">
-                            <img src="./assets/imgs/Com-VI-OfficeSpace01.jpg" alt="Sleek Office Design">
-                            <div class="portfolio-item-info">
-                                <h3>Sleek Office Design</h3>
-                                <p>An open-plan office space promoting collaboration and productivity.</p>
-                            </div>
-                        </div>
-                    
-                        <!-- Renovation Item -->
-                        <div class="portfolio-item" data-category="renovation">
-                            <img src="./assets/imgs/Res-Ologolo-Kitchen05.jpg" alt="Kitchen Makeover">
-                            <div class="portfolio-item-info">
-                                <h3>Kitchen Makeover</h3>
-                                <p>A complete kitchen renovation with modern appliances and stylish finishes.</p>
-                            </div>
-                        </div>
-                    
-                        <!-- Residential Video -->
-                        <div class="portfolio-item" data-category="residential">
-                            <video muted controls>
-                                <source src="./assets/vids/Res-VictoryPark-BedRM-vid.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="portfolio-item-info">
-                                <h3>Cozy Bedroom Retreat</h3>
-                                <p>A serene bedroom design focusing on comfort and relaxation.</p>
-                            </div>
-                        </div>
-                    
-                        <!-- Commercial Item -->
-                        <div class="portfolio-item" data-category="commercial">
-                            <video muted controls>
-                                <source src="./assets/vids/Com-Culate-Stores01.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                            <div class="portfolio-item-info">
-                                <h3>Chic Retail Space</h3>
-                                <p>A trendy retail interior designed to enhance the shopping experience.</p>
-                            </div>
-                        </div>
-                    
-                        <!-- Renovation Video -->
-                        <div class="portfolio-item" data-category="renovation">
-                            <img src="./assets/imgs/Res-VictoryPark-BathRM03.jpg" alt="Bathroom Transformation">
-                            <div class="portfolio-item-info">
-                                <h3>Bathroom Transformation</h3>
-                                <p>A luxurious bathroom renovation with spa-like features.</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Portfolio items will be dynamically added here -->
-                </div>
-                <a href="portfolio.html" class="view-more-btn">View More Projects</a>
+            <div class="service-item">
+              <i class="fas fa-comments"></i>
+              <h3>Client Consultations</h3>
+              <p>Personalized advice to help you make informed decisions.</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <!-- SKILLS -->
-        <section id="skills">
-            <div class="container">
-                <h2>Skills</h2>
-                <div class="skills-container">
-                    <div class="skill-category">
-                        <h3>Professional Skills</h3>
-                        <ul>
-                            <li><i class="fas fa-users"></i> Leadership</li>
-                            <li><i class="fas fa-comments"></i> Effective Communication</li>
-                            <li><i class="fas fa-brain"></i> Creative Thinking</li>
-                            <li><i class="fas fa-lightbulb"></i> Strategic Problem Solving</li>
-                            <li><i class="fas fa-heart"></i> Empathy</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="skill-category">
-                        <h3>Technical Skills</h3>
-                        <ul>
-                            <li><i class="fas fa-file-word"></i> Microsoft Office Tools</li>
-                            <li><i class="fas fa-tasks"></i> Asana</li>
-                        </ul>
-                    </div>
-                </div>
+      <section id="portfolio">
+        <div class="container">
+          <h2>Portfolio</h2>
+          <div class="portfolio-categories">
+            <button class="category-btn active all-btn" data-category="all">All</button>
+            <a href="./portfolio.html#residential"><button class="category-btn" data-category="residential">Residential</button></a>
+            <a href="./portfolio.html#commercial"><button class="category-btn" data-category="commercial">Commercial</button></a>
+            <a href="./portfolio.html#renovations"><button class="category-btn" data-category="renovation">Renovation</button></a>
+          </div>
+          <div class="portfolio-grid" id="portfolio-grid"></div>
+          <a href="portfolio.html" class="view-more-btn">View More Projects</a>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fas fa-users"></i>
+              <h3>Leadership</h3>
             </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Me</h2>
-                <div class="contact-container">
-                    <form id="contact-form">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="tel" name="phone" placeholder="Your Phone Number">
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </form>
-
-                    <div class="contact-info">
-                        <p>
-                            <a href="tel:+2348105539070"><i class="fas fa-phone"></i> +234 810 553 9070</a>
-                        </p>
-                        <p>
-                            <a href="mailto:jouleself@gmail.com"><i class="fas fa-envelope"></i> jouleself@gmail.com</a>
-                        </p>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/babalola-kehinde-b-5364a72b6" target="_blank"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://www.instagram.com/_kennybabs?igsh=ZGtkMzNmZmlhanZv" target="_blank"><i class="fab fa-instagram"></i></a>
-                            <a href="https://wa.me/2348105539070" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="skill-item">
+              <i class="fas fa-comments"></i>
+              <h3>Effective Communication</h3>
             </div>
-        </section>
+            <div class="skill-item">
+              <i class="fas fa-brain"></i>
+              <h3>Creative Thinking</h3>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-lightbulb"></i>
+              <h3>Strategic Problem Solving</h3>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-heart"></i>
+              <h3>Empathy</h3>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-file-word"></i>
+              <h3>Microsoft Office Tools</h3>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-tasks"></i>
+              <h3>Asana</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials">
+        <div class="container">
+          <h2>Testimonials</h2>
+          <div class="testimonial-slider">
+            <div class="slider-container">
+              <div class="testimonial-item">
+                <p>"Babalola’s design for our boutique was stunning and perfectly captured our brand’s essence."</p>
+                <h4 class="client-title">Owner, Culate Clothing Store</h4>
+              </div>
+              <div class="testimonial-item">
+                <p>"Babalola’s supervision ensured our project stayed on budget and schedule. Highly recommend!"</p>
+                <h4 class="client-title">Client, Victoria Bay</h4>
+              </div>
+              <div class="testimonial-item">
+                <p>"Working with Babalola was a pleasure. He delivered our project design on time with precision and attention to details, which definitely exceeded our expectations."</p>
+                <h4 class="client-title">CEO, Spasso Lounge</h4>
+              </div>
+              <div class="testimonial-item">
+                <p>"Babalola's experience transformed our living space into a masterpiece! His attention to detail and creativity are unmatched."</p>
+                <h4 class="client-title">Homeowner, Lagos</h4>
+              </div>
+              <div class="testimonial-item">
+                <p>"The kitchen renovation was flawless. Babalola’s vision brought warmth and functionality to my home."</p>
+                <h4 class="client-title">Client, Ikate Lekki</h4>
+              </div>
+              <div class="testimonial-item">
+                <p>"Babalola’s consultation helped me make the best design choices for the interior design of my New Home."</p>
+                <h4 class="client-title">Owner, Megamond Lounge</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Contact Me</h2>
+          <div class="contact-container">
+            <form id="contact-form" action="https://docs.google.com/forms/d/e/YOUR_GOOGLE_FORM_ID/formResponse" method="POST" target="_blank">
+              <input type="text" name="entry.123456789" placeholder="Your Name" required>
+              <input type="email" name="entry.987654321" placeholder="Your Email" required>
+              <input type="tel" name="entry.456789123" placeholder="Your Phone Number">
+              <textarea name="entry.789123456" placeholder="Your Message" required></textarea>
+              <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <div class="contact-info">
+              <p><a href="tel:+2348105539070"><i class="fas fa-phone"></i> +234 810 553 9070</a></p>
+              <p><a href="mailto:jouleself@gmail.com"><i class="fas fa-envelope"></i> jouleself@gmail.com</a></p>
+              <div class="social-links">
+                <a href="https://www.linkedin.com/in/babalola-kehinde-b-5364a72b6" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_kennybabs?igsh=ZGtkMzNmZmlhanZv" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/2348105539070" target="_blank"><i class="fab fa-whatsapp"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
+    <button id="back-to-top" title="Back to Top"><i class="fas fa-arrow-up"></i></button>
 
     <footer>
-        <p>&copy; 2025 Babalola Kehinde B. All rights reserved.</p>
-        <!-- <p>Designed with passion for timeless spaces</p> -->
+      <p>© 2025 Babalola Kehinde B. All rights reserved.</p>
     </footer>
 
+    <script src="portfolioData.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
-
