@@ -408,7 +408,6 @@ h2 {
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
-
 /* ---- PORTFOLIO PAGE (portfolio.html) ---- */
 .portfolio-page {
     padding-top: 80px; /* To account for the fixed header */
@@ -482,9 +481,10 @@ h2 {
 
 .slider-container img,
 .slider-container video {
-    min-width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /* Changed from min-width to ensure exact fit */
+    height: 350px; /* Explicit height to match .project-slider */
+    object-fit: cover; /* Maintains aspect ratio with cropping */
+    flex-shrink: 0; /* Prevents shrinking in flex container */
 }
 
 .slider-btn {
@@ -499,6 +499,8 @@ h2 {
     cursor: pointer;
     font-size: 18px;
     transition: background-color 0.3s ease;
+    z-index: 10; /* Added to ensure buttons are above media */
+    display: block; /* Ensure buttons are visible by default */
 }
 
 .slider-btn:hover {
@@ -513,7 +515,7 @@ h2 {
     right: 10px;
 }
 
-#residential , #renovations {
+#residential, #renovations {
     background-color: var(--color-almost-black);
 }
 
@@ -521,6 +523,7 @@ h2 {
 .project-slider .slider-container > :only-child ~ .slider-btn {
     display: none;
 }
+
 
 /* ---- SKILLS SECTION ---- */
 .skills-grid {
@@ -870,8 +873,8 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    .portfolio-page h1 {
-        font-size: 1.8rem; 
+  .portfolio-page h1 {
+        font-size: 1.8rem;
     }
 
     .project-section h2 {
@@ -884,6 +887,24 @@ footer {
 
     .project-info p {
         font-size: 0.8rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .slider-container img,
+    .slider-container video {
+        height: 300px; /* Reduced height for mobile */
+    }
+
+    .project-slider {
+        height: 300px; /* Match media height for mobile */
+    }
+
+    .slider-btn {
+        padding: 8px 12px; /* Slightly smaller for mobile */
+        font-size: 16px; /* Adjusted for mobile */
     }
 
     .testimonial-item {
